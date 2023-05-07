@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    background: linear-gradient(to right, #acb6e5, #86fde8);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.weather{
+    height: 80%;
+    width: 40%;
+    background: linear-gradient(to right, #ffe259, #ffa751);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 2s ease;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.weather button{
+    margin-top: 10px;
+}
+.weather:hover{
+    transform: scale(1.1);
+}
+.weatherReport{
+    margin-top: 20px;
+    text-align: center;
+    background: linear-gradient(to right, #fd746c, #ff9068);
+    padding: 20px;
+    border-radius: 10px;
+}
