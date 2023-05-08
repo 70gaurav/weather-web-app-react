@@ -39,3 +39,15 @@ form{
     padding: 20px;
     border-radius: 10px;
 }
+@media all and (max-width: 1000px){
+.weather{
+    height: 60%;
+    width: 60%;
+}
+}
+@media all and (max-width: 600px){
+.weather{
+    height: 50%;
+    width: 90%;
+}
+}
