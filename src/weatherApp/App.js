@@ -9,7 +9,7 @@ import "./weather.css"
 function App() {
     const [value, setValue] = useState("")
     const [location, setLocation] = useState("")
-    const key = "9b0931d9808c87226df2970dd5402599"
+    const key = "c2c0d5e43df0a1b8b199ff7f22d2c2cd"
 
     function WeatherHandler(e) {
         e.preventDefault()
