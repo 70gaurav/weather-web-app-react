@@ -1,53 +1,76 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-.wrapper{
-    background: linear-gradient(to right, #acb6e5, #86fde8);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
+.wrapper {
+  background: url("../assets/images/background.jpg") no-repeat center / cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.weather{
-    height: 80%;
-    width: 40%;
-    background: linear-gradient(to right, #ffe259, #ffa751);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    transition: all 2s ease;
+.weather {
+  height: 80%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6%;
+  /* transition: all 2s ease; */
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
-form{
-    display: flex;
-    flex-direction: column;
+form {
+  display: flex;
+  flex-direction: column;
 }
-.weather button{
-    margin-top: 10px;
+.weather button {
+  margin-top: 10px;
 }
-.weather:hover{
-    transform: scale(1.1);
+/* .weather:hover {
+  transform: scale(1.1);
+} */
+.weatherReport {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  justify-content: space-between;
+
 }
-.weatherReport{
-    margin-top: 20px;
-    text-align: center;
-    background: linear-gradient(to right, #fd746c, #ff9068);
-    padding: 20px;
-    border-radius: 10px;
+.weatherReport img {
+  width: 60px;
 }
-@media all and (max-width: 1000px){
-.weather{
+
+.box{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 5%;
+    margin:30px;
+    padding: 15px;
+    height: 100px;
+    width: 150px;
+}
+@media all and (max-width: 1000px) {
+  .weather {
     height: 60%;
     width: 60%;
+  }
 }
-}
-@media all and (max-width: 600px){
-.weather{
+@media all and (max-width: 600px) {
+  .weather {
     height: 50%;
     width: 90%;
-}
+  }
 }
